@@ -8,19 +8,19 @@ const GitHubIcon = dynamic(() => import('@mui/icons-material/GitHub'), { ssr: fa
 
 const OPTIONS_MENU = [
     {
-        label: 'Projetos',
+        label: 'Projects',
         url: ''
     },
     {
-        label: 'Habilidades',
+        label: 'Skills',
         url: ''
     },
     {
-        label: 'Experiências',
+        label: 'Experience',
         url: ''
     },
     {
-        label: 'Contato',
+        label: 'Contact',
         url: ''
     },
 ]
