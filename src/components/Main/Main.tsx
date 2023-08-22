@@ -1,8 +1,9 @@
 import React from 'react'
 
 import { Box } from '@mui/material'
+import Welcome from '../Global/Welcome/Welcome';
 
-function ContentContainer() {
+function Main() {
 return (
     <Box sx={{ 
         flex: '1', 
@@ -13,9 +14,9 @@ return (
         color: '#FFFFFF'
         }}
     >
-        ContentContainer
+        <Welcome />
     </Box>
 )
 }
 
-export default ContentContainer
+export default Main;
