@@ -41,12 +41,14 @@ const SOCIAL_MIDIA = [
 
 function SideMenu() {
 return (
-    <Box style={{ 
+    <Box sx={{ 
         display: 'flex', 
         flexDirection: 'column', 
         minWidth: '10vw', 
         height: '100%',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        backgroundColor: '#111111',
+        color: '#FFFFFF',
         }}
     >
         <Box sx={{
@@ -74,7 +76,7 @@ return (
                     key={`li-${label}`} 
                     sx={{ 
                         ":hover": { 
-                            backgroundColor: '#FFBD59', color: '#FFFFFF'
+                            backgroundColor: '#FFBD59', color: '#000000'
                         },
                         cursor: 'pointer'
                     }}
@@ -118,12 +120,12 @@ return (
                         fullWidth
                         sx={{
                             width: '95%', 
-                            color: '#000000',
+                            color: '#FFFFFF',
                             border: 'none', 
                             ":hover": {
                                 border: 'none', 
                                 backgroundColor: '#FFBD59', 
-                                color: '#FFFFFF',
+                                color: '#000000',
                                 fontWeight: '600',
                             }
                         }}
