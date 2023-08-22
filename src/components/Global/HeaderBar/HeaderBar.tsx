@@ -2,7 +2,7 @@ import React from 'react'
 import TranslateIcon from '@mui/icons-material/Translate';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const theme = {
     'dark': <DarkModeIcon />,
@@ -11,11 +11,26 @@ const theme = {
 
 function HeaderBar() {
 return (
-    <Box style={{ border: '1px solid blue', width: '100vw', height: '5vh'}}>
-        {
-            theme['ligth']
-        }
-        <TranslateIcon />
+    <Box 
+    style={{ 
+        width: '90vw', 
+        height: '5vh', 
+        padding: '10px',
+        paddingRight: '25px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        gap: '25px'
+        }}
+    >
+        <Typography variant="h6">
+        Fernando Mós | Software enginner
+        </Typography>
+        <Box sx={{display: 'flex', gap: '10px'}}>
+            {
+                theme['ligth']
+            }
+            <TranslateIcon />
+        </Box>
     </Box>
 )
 }

@@ -65,9 +65,6 @@ return (
                 height={150}
                 style={{padding: '0', margin: '0'}}
             />
-            <Typography variant="body2">
-                Full Stack Developer
-            </Typography>
         </Box>
             <List style={{display: 'flex', flexDirection: 'column'}}>
             {
