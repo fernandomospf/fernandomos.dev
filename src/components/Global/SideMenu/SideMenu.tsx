@@ -9,24 +9,28 @@ const GitHubIcon = dynamic(() => import('@mui/icons-material/GitHub'), { ssr: fa
 import GTranslateIcon from '@mui/icons-material/GTranslate';
 
 
-const OPTIONS_MENU = [
-    {
-        label: 'Projects',
-        url: ''
-    },
-    {
-        label: 'Skills',
-        url: ''
-    },
-    {
-        label: 'Experience',
-        url: ''
-    },
-    {
-        label: 'Contact',
-        url: ''
-    },
-]
+// const OPTIONS_MENU = [
+    // {
+    //     label: 'Home',
+    //     url: ''
+    // },
+    // {
+    //     label: 'Projects',
+    //     url: ''
+    // },
+    // {
+    //     label: 'Skills',
+    //     url: ''
+    // },
+    // {
+    //     label: 'Experience',
+    //     url: ''
+    // },
+    // {
+    //     label: 'Contact',
+    //     url: ''
+    // },
+// ]
 
 const SOCIAL_MIDIA = [
     {
@@ -68,11 +72,11 @@ return (
                 alt='My personal brand'
                 width={150}
                 height={150}
-                style={{padding: '0', margin: '0'}}
+                style={{paddingTop: '25px', margin: '0'}}
             />
         </Box>
             <List style={{display: 'flex', flexDirection: 'column'}}>
-            {
+            {/* {
                 OPTIONS_MENU.map(({label}, index) => (
                     <>
                     <ListItem 
@@ -95,7 +99,7 @@ return (
                         }
                     </>
                 ))
-            } 
+            }  */}
             </List>
         <Box 
         sx={{ 

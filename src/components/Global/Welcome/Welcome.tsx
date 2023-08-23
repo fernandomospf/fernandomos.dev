@@ -1,20 +1,91 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-import React from 'react';
-import { Box, Typography, Button} from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, Button, Dialog, DialogTitle, DialogContent} from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
+import CloseIcon from '@mui/icons-material/Close';
+interface IContactModal {
+    open: boolean;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ContactModal = ({open, setOpen}: IContactModal) => {
+    return (
+        <Dialog 
+            open={open} 
+            onClose={() => setOpen(false)}
+            sx={{
+                '& .MuiDialog-paper': {
+                backgroundColor: '#161616'
+                },
+            }}
+        >
+            <Box
+                sx={{ 
+                    backgroundColor: "#16161616", 
+                    color: '#FFFFFF',
+                    width: '550px',
+                    height: '450px'
+                }}            
+            >
+                <DialogTitle    
+                sx={{
+                    textAlign: 'center',
+                    width: '100%',
+                    height: '30%',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding: 0,
+                }}>
+                    <Typography
+                        variant='h5'
+                        sx={{ width: '95%', marginLeft: '5%'}}
+                    >
+                        Scan the QRcode
+                    </Typography>
+                    <CloseIcon onClick={() => setOpen(false)} sx={{cursor: 'pointer', width: '5%', position: 'absolute', right: '20px', top: '15px'}}/>
+                </DialogTitle>
+                <DialogContent 
+                    sx={{ 
+                        height: '60%', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        boxSizing: 'border-box',
+                        flexDirection: 'column'
+                    }}
+                >
+                    <Image 
+                        src={'/qrcode.png'}
+                        width={200}
+                        height={200}
+                        alt="QRcode to redirect for my Link Three"
+                    />               
+                    <Typography variant="body1">
+                        With the QRcode you will have access to my linkthree where all my main contacts are.
+                    </Typography>     
+                </DialogContent>
+            </Box>
+        </Dialog>
+    )
+}
 
 function Welcome() {
+    const [open, setOpen] = useState<boolean>(false);
 return (
     <Box sx={{ 
         display: 'flex', 
         gap: '150px', 
         justifyContent: 'center',
         alignItems: 'center',
-        height: '98vh'
+        height: '96vh'
         }}
     >
+        {
+            open && <ContactModal open={open} setOpen={setOpen}/>
+        }
         <Box sx={{display: 'flex', flexDirection: 'column', gap: '55px'}}>
             <Box>
                 <Typography variant='h3'> Hi,</Typography>
@@ -44,6 +115,7 @@ return (
                         color: '#FFBD59',
                         cursor: 'pointer'
                     }}}
+                    onClick={() => setOpen(true)}
                 >
                     Contact me
                 </Button>
