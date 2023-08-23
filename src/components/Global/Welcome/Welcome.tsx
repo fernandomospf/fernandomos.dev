@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+'use client';
 import React from 'react';
 import { Box, Typography, Button} from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Welcome() {
 return (
@@ -45,16 +47,18 @@ return (
                 >
                     Contant me
                 </Button>
-                <Button
-                    variant="outlined"
-                    sx={{color: '#FFBD59', borderColor: '#FFBD59', fontWeight: 500, ":hover": {
-                        borderColor: '#FFF',
-                        color: '#FFF',
-                        cursor: 'pointer'
-                    }}}
-                >
-                    Download CV
-                </Button>
+                <Link href="/CV_Fernando-mos.pdf" target='_Blank' rel='noreferrer'>
+                    <Button
+                        variant="outlined"
+                        sx={{color: '#FFBD59', borderColor: '#FFBD59', fontWeight: 500, ":hover": {
+                            borderColor: '#FFF',
+                            color: '#FFF',
+                            cursor: 'pointer'
+                        }}}
+                    >
+                        Download CV
+                    </Button>
+                </Link>
             </Box>
         </Box>
         <Image

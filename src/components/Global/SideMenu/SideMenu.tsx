@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Box, Button, Divider, List, ListItem, Typography } from '@mui/material'
 import Image from 'next/image'
@@ -5,6 +6,8 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 const LinkedInIcon = dynamic(() => import('@mui/icons-material/LinkedIn'), { ssr: false });
 const GitHubIcon = dynamic(() => import('@mui/icons-material/GitHub'), { ssr: false });
+import GTranslateIcon from '@mui/icons-material/GTranslate';
+
 
 const OPTIONS_MENU = [
     {
@@ -96,15 +99,36 @@ return (
             </List>
         <Box 
         sx={{ 
-            height: '10vh', 
+            height: '20vh', 
             display: 'flex', 
-            justifyContent: 'space-around', 
+            justifyContent: 'space-evenly', 
             flexDirection: 'column',
             alignItems: 'center'
             }}
         >
+            <Box 
+                sx={{ 
+                    width: '100%', 
+                    height: '50px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                    }}
+                >
+                <Button>
+                    <Image 
+                        src={"/sun-color-icon.svg"}
+                        height={20}
+                        width={20}
+                        alt='icon to change theme'
+                    />
+                </Button>
+                <Button>
+                    <GTranslateIcon sx={{color: '#FFBD59'}}/>
+                </Button>
+            </Box>
             {
-            SOCIAL_MIDIA.map(({label, url}) => (
+            SOCIAL_MIDIA.map(({label, url, icon}) => (
                 <Link 
                     key={`button-${label}`} 
                     href={url} 
@@ -113,15 +137,23 @@ return (
                         width: '95%', 
                         color: '#000000',
                         border: 'none', 
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
                     }}
                 >
                     <Button 
                         variant="outlined"
                         fullWidth
+                        endIcon={icon}
                         sx={{
-                            width: '95%', 
+                            width: '75%', 
                             color: '#FFFFFF',
                             border: 'none', 
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            textAlign: 'justify',
+                            padding: '5px',
                             ":hover": {
                                 border: 'none', 
                                 backgroundColor: '#FFBD59', 
