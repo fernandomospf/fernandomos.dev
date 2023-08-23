@@ -45,7 +45,7 @@ return (
                         cursor: 'pointer'
                     }}}
                 >
-                    Contant me
+                    Contact me
                 </Button>
                 <Link href="/CV_Fernando-mos.pdf" target='_Blank' rel='noreferrer'>
                     <Button
