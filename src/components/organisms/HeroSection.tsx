@@ -17,6 +17,7 @@ const HeroSection = () => {
     const func = async () => {
       if (repos.length === 0) {
         const response = await github.getRepos();
+        console.log(response);
         setRepos(response);
       }
     }

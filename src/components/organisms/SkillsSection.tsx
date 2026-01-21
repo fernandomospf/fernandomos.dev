@@ -5,19 +5,19 @@ import { useParallax } from '@/hooks/useParallax';
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'HTML/CSS'],
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Material UI', 'HTML/CSS'],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Python', 'Java', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+    skills: ['Node.js', 'Python', 'C#', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL'],
   },
   {
     title: 'DevOps & Tools',
-    skills: ['Git', 'Docker', 'AWS', 'CI/CD', 'Linux', 'Kubernetes'],
+    skills: ['Git', 'Docker', 'Azure', 'CI/CD', 'Linux'],
   },
   {
     title: 'Soft Skills',
-    skills: ['Comunicação', 'Trabalho em Equipe', 'Resolução de Problemas', 'Aprendizado Contínuo'],
+    skills: ['Comunicação', 'Trabalho em Equipe', 'Resolução de Problemas', 'Aprendizado Contínuo', 'Adaptabilidade', 'Proatividade', 'Gestão de Tempo'],
   },
 ];
 

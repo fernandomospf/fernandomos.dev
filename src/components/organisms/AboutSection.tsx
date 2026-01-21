@@ -45,18 +45,14 @@ const AboutSection = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Sou um desenvolvedor apaixonado por criar soluções tecnológicas que impactam positivamente a vida das pessoas. 
-                Com experiência em desenvolvimento full-stack, busco constantemente aprender novas tecnologias e aprimorar minhas habilidades.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Minha jornada na programação começou há alguns anos, e desde então venho construindo uma sólida experiência 
-                em diferentes tecnologias e frameworks, sempre focando em entregar código de qualidade e experiências excepcionais.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Quando não estou codando, gosto de explorar novas tecnologias, contribuir para projetos open source 
-                e compartilhar conhecimento com a comunidade de desenvolvedores.
-              </p>
+              <p className="text-md text-muted-foreground leading-relaxed">
+                Sou desenvolvedor de software com foco em backend e arquitetura, atuando profissionalmente com <strong>TypeScript</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, <strong>Python</strong> e <strong>C#</strong>. Trabalho diariamente com sistemas reais, código legado, refatoração, performance e evolução de produtos em produção.</p>
+
+              <p className="text-md text-muted-foreground leading-relaxed">Tenho experiência em <strong>desenvolvimento fullstack</strong>, mas meu interesse principal está em back-end bem feito: código limpo, arquitetura clara, segurança, testes e decisões técnicas que façam sentido no longo prazo. Gosto de entender o problema antes de escrever a primeira linha de código.</p>
+
+              <p className="text-md text-muted-foreground leading-relaxed">Já atuei em projetos que exigem escala, manutenção e responsabilidade técnica, lidando com integrações, APIs, bancos de dados relacionais e boas práticas de engenharia. Valorizo commits bem documentados, organização de projeto e código fácil de manter por qualquer pessoa do time.</p>
+
+              <p className="text-md text-muted-foreground leading-relaxed">Estou em constante evolução técnica, estudando arquitetura de software, testes automatizados e boas práticas de mercado. Este portfólio reúne projetos criados com esse foco: qualidade, clareza e aprendizado real, não apenas código que <strong>“funciona”</strong>.</p>
             </div>
 
             <div className="relative">

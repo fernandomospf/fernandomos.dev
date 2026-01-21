@@ -5,38 +5,74 @@ import { Briefcase, Calendar } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Desenvolvedor Full Stack Senior',
-    company: 'Empresa Atual',
-    period: '2022 - Presente',
+    title: 'Especialista Técnico Sênior em Software',
+    company: 'NTT DATA',
+    period: 'ago/2025 - Presente',
     description:
-      'Liderança técnica de projetos, arquitetura de sistemas e mentoria de desenvolvedores juniores. Foco em React, Node.js e cloud computing.',
-    technologies: ['React', 'Node.js', 'AWS', 'PostgreSQL'],
+      'Atuação na Getnet, no time de Reinforcement da NTT DATA, apoiando múltiplos times internos com foco no Merchant Portal. Trabalho voltado à melhoria de performance, correção de bugs em diversos microsserviços e desenvolvimento de novas funcionalidades. Forte colaboração entre equipes, comunicação constante e aplicação de boas práticas de engenharia.',
+    technologies: [
+      'Node.js',
+      'React',
+      'Microservices',
+      'Micro Frontends',
+      'MongoDB',
+      'RabbitMQ',
+      'Azure Pipelines',
+      'Git Flow',
+    ],
   },
   {
-    title: 'Desenvolvedor Full Stack',
-    company: 'Empresa Anterior',
-    period: '2020 - 2022',
+    title: 'Desenvolvedor de Software III',
+    company: 'Radix',
+    period: 'dez/2022 - ago/2025',
     description:
-      'Desenvolvimento de aplicações web complexas, APIs RESTful e integrações com sistemas terceiros.',
-    technologies: ['Vue.js', 'Python', 'Django', 'Docker'],
+      'Desenvolvimento de novas funcionalidades e correção de bugs em sistemas internos. Atuação ativa na sugestão e implementação de melhorias para otimização e eficiência. Responsável pela criação de uma solução para compartilhamento de scripts e arquiteturas, facilitando o onboarding de novos projetos. Desenvolvimento de microserviço para gerenciamento e otimização de chamadas, reduzindo significativamente o tempo de carregamento. Participação na implementação de gerenciamento de acesso com Keycloak.',
+    technologies: [
+      'Node.js',
+      'Next.js',
+      'TypeScript',
+      'GraphQL',
+      'Docker',
+      'Keycloak',
+      'Microservices',
+    ],
   },
   {
-    title: 'Desenvolvedor Frontend',
-    company: 'Startup Tech',
-    period: '2019 - 2020',
+    title: 'Desenvolvedor de Software II',
+    company: 'Radix',
+    period: 'dez/2022 - ago/2024',
     description:
-      'Criação de interfaces responsivas e acessíveis, otimização de performance e implementação de testes.',
-    technologies: ['React', 'TypeScript', 'Jest', 'Styled Components'],
+      'Atuação no desenvolvimento e evolução de sistemas internos, com foco em novas funcionalidades, correção de bugs e melhorias contínuas. Participação no desenvolvimento de microserviços, soluções internas reutilizáveis e integração de controle de acesso com Keycloak.',
+    technologies: [
+      'Node.js',
+      'React',
+      'Next.js',
+      'TypeScript',
+      'GraphQL',
+      'Docker',
+      'Keycloak',
+    ],
   },
   {
-    title: 'Desenvolvedor Júnior',
-    company: 'Primeira Empresa',
-    period: '2018 - 2019',
+    title: 'Full Stack Developer I',
+    company: 'NextAge',
+    period: 'ago/2020 - dez/2022',
     description:
-      'Início da carreira com desenvolvimento web, aprendizado de boas práticas e trabalho em equipe.',
-    technologies: ['JavaScript', 'PHP', 'MySQL', 'jQuery'],
+      'Desenvolvimento e manutenção de aplicações web e mobile utilizando Next.js com TypeScript e React Native. Atuação em todo o ciclo de desenvolvimento, desde levantamento de requisitos com o cliente até implementação, testes e correção de bugs. Forte criação de novas funcionalidades e melhorias técnicas.',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'React',
+      'React Native',
+      'Node.js',
+      'AdonisJS',
+      'Express',
+      'MySQL',
+      'ScrumBan',
+    ],
   },
 ];
+
 
 const ExperienceSection = () => {
   const parallaxOffset = useParallax(0.1);
@@ -68,9 +104,8 @@ const ExperienceSection = () => {
             {experiences.map((exp, index) => (
               <div
                 key={exp.title + exp.company}
-                className={`relative flex flex-col md:flex-row gap-8 mb-12 last:mb-0 ${
-                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
+                className={`relative flex flex-col md:flex-row gap-8 mb-12 last:mb-0 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                  }`}
               >
                 {/* Timeline dot */}
                 <div className="absolute left-0 md:left-1/2 top-0 timeline-dot md:-translate-x-1/2 z-10" />

@@ -73,7 +73,7 @@ const ProjectsSection = () => {
               Meus <span className="text-gradient">Projetos</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Uma seleção de projetos que demonstram minhas habilidades e experiência
+              Uma seleção de projetos que demonstram  e experiência
             </p>
           </div>
 

@@ -9,7 +9,7 @@ class GithubApi {
     }
 
     public async getRepos() {
-        const response = await fetch(`${this.baseUrl}${this.user}/repos`, {
+        const response = await fetch(`${this.baseUrl}/${this.user}/repos`, {
             headers: {
                 Authorization: `Bearer ${this.token}`,
                 'X-GitHub-Api-Version': '2022-11-28',

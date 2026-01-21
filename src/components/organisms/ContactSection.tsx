@@ -13,15 +13,9 @@ const contactInfo = [
     href: 'mailto:fernandomosp@gmail.com',
   },
   {
-    icon: Phone,
-    label: 'Telefone',
-    value: '+55 (11) 99999-9999',
-    href: 'tel:+5511999999999',
-  },
-  {
     icon: MapPin,
     label: 'Localização',
-    value: 'São Paulo, Brasil',
+    value: 'Curitiba, Paraná - Brasil',
     href: null,
   },
 ];
