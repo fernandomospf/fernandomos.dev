@@ -83,7 +83,7 @@ const HeroSection = () => {
               >
                 Entre em contato
               </a>
-              <a
+              {/* <a
                 href="#projects"
                 onClick={(e) => {
                   e.preventDefault();
@@ -93,7 +93,7 @@ const HeroSection = () => {
                            hover:bg-secondary transition-all duration-300"
               >
                 Ver projetos
-              </a>
+              </a> */}
             </div>
 
             <div

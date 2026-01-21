@@ -10,9 +10,6 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © {currentYear} Desenvolvedor. Todos os direitos reservados.
           </p>
-          <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Feito com <Heart size={14} className="text-primary fill-primary" /> usando React & Tailwind
-          </p>
         </div>
       </div>
     </footer>
