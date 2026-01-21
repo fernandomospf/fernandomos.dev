@@ -1,3 +1,5 @@
+import type { GithubRepo } from "./type";
+
 export interface GithubActions {
     setRepos: (repos: GithubRepo[]) => void;
     setLoading: (loading: boolean) => void;
